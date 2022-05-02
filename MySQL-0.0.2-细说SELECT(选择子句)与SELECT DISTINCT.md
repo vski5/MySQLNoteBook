@@ -39,7 +39,7 @@ FROM customers
 
 **如何得到某一项的唯一列表**，比如得到所在的州都是VA的唯一列表
 可以用关键字DISTINCT。
-DISTINCT可以删除重复项。
+DISTINCT可以删除重复项，相同的就会合并，不再有重复
 
 distinct
 adj. 不同的，有区别的；清楚的，明显的；确切的
