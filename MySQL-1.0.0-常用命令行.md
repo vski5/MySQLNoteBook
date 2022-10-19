@@ -67,14 +67,44 @@ SELECT * FROM 表的名字 WHERE 列的名字 = 列的值 ；
 ```
 11) 修改指定的数据
 
+`UPDATE 表的名字 SET 列名key = 值value WHERE 列名='此列对应的某一行的值';`
+
+`UPDATE players SET status = 990 WHERE username='user111';`
+
 12) 删除指定的数据
+
+` DELETE FROM 表的名字 WHERE 列名='此列对应的某一行的值' ;  `
+
+` DELETE FROM players WHERE username='user111' ;  `
 
 13) 按指定的数据排序
 
+`SELECT * FROM 表的名字 ORDER BY 列名 DESC; --按照 列名 倒叙排序 `
+
+`SELECT * FROM players ORDER BY status DESC; --按照 status 倒叙排序 `
+
 14) 统计数量
 
-15) Limit
+`  select count(第几列，能写成 * ) from 表的名字 ;  `
+
+`  select count(1) from players ;  `
+
+15) Limit（限定查表）
+```
+--select 列名,列名 from 表的名字 limit 查询前几条;
+select id,name from nav limit 2;
+--select 列名,列名 from 表的名字 limit 跳过几条,查询几条;
+select id,name from nav limit 2,2;
+```
 
 16) 删除指定的表
 
-15) 删除指定的数据库
+`DROP TABLE 表名;`
+
+`DROP TABLE test;`
+
+17) 删除指定的数据库
+
+`DROP DATABASE book; `
+
+`DROP DATABASE 数据库名字; `
