@@ -19,7 +19,7 @@ MySQL-1.0.1-数据库表之间的关系-Mysql中的关联查询(内连接，外�
 
 4） 多对多的关系，使用中间表
 
-5） NAME这种保留字被用作表的列的列名的话，加上单引号，'name'
+5） NAME这种保留字被用作表的列的列名的话，加上重音符号\` ，\`name`
 
 6) 左外连接 LEFT JOIN ， 就是LEFT JOIN后面的表在左边
 -- SELECT * FROM student LEFT JOIN lesson_student ON student.id=lesson_student.student_id 
